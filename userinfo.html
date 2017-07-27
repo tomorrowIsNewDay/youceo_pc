@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>有策管理 PC端－个人资料</title>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" type="text/css" href="./asset/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./asset/css/iconfont.css"> 
+ <!-- 本页日期选择插件 -->
+ <link rel="stylesheet" href="./asset/css/datepicker3.css">
+ <link rel="stylesheet" href="./asset/css/jquery.timepicker.min.css">
+  <!-- 本页 dialog 插件 -->
+  <link href="./asset/css/jBox.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./asset/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="logo pull-left">
+			<a href=""><img src="./asset/images/youceo.png"></a>
+		</div>
+		<nav class="leftNav pull-left">
+			<ul>
+				<li><a href="drive.html">推动</a></li>
+				<li><a href="taskList.html">任务</a></li>
+				<!-- <li><a href="">项目</a></li> -->
+				<li><a href="jobAccount.html">工作统计</a></li>
+				<li><a href="jobAnalysis.html">工作分析</a></li>
+				<li><a href="reportForms.html">报表</a></li>
+				<li><a href="crm.html">CRM</a></li>
+			</ul>	
+		</nav>
+		<nav class="rightNav pull-right">
+			<ul>
+				<li><a href="javascript:;" id="add-a"><i class="icon iconfont icon-plus-circle headericon"></i></a>
+					<ul class="avatar-menu">
+						<li><a href="addTask.html"><i class="icon iconfont icon-plus-circle"></i>新增任务</a></li>
+						<li><a href="" id="newCustomers-a"><i class="icon iconfont icon-add_people"></i>新增客户</a></li>
+					</ul>
+				</li>
+				<li><a href=""><i class="icon iconfont icon-chat headericon"></i></a></li>
+				<li>
+					<a href="javascript:;" id="avatar-a"><img  class="avatar avatar-34" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></a>
+					<ul class="avatar-menu">
+						<li><a href="userinfo.html"><i class="iconfont icon-personal-data"></i>个人资料</a></li>
+						<li><a href="cloudDisk.html"><i class="iconfont icon-cloud-disk"></i>云盘</a></li>
+						<li><a href="" id="meeting-a"><i class="iconfont icon-meeting"></i>会议模式</a></li>
+						<li><a href="workflow.html"><i class="icon iconfont icon-workflow"></i>工作流管理</a></li>
+						<li><a href="org.html"><i class="iconfont icon-mail-list"></i>组织架构</a></li>
+						<li><a href=""><i class="iconfont icon-Enterprise_information"></i>权限设置</a></li>
+						<li><a href=""><i class="iconfont icon-exit"></i>退出</a></li>
+					</ul>
+				</li>
+			</ul>		
+		</nav>
+	</header>
+	<div class="wrapperLeft r0 ov-h">
+		<div class="infoWrapper">
+			<div class="userinfo">
+				<h4 class="ov-h">个人资料<span class="pull-right"><button id="edit" class="btn-g">编辑</button></span></h4>
+				<div>
+					<h6 class="dis-2">头像</h6><p class="dis-8 avatar-80 relative"><img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="avatar  avatar-80">
+						<span class="avatarShade">
+							<label for="fileImg">上传新头像</label>
+							<form><input type="file" id="fileImg" accept="image/jpeg"></form>
+						</span></p>
+				</div>
+				<div>
+					<h6 class="dis-2">姓名</h6><p class="dis-8"><span class="userinfoText">孙路放</span><input type="hidden" name="" class="userinfoInput"></p>
+				</div>
+				<div>
+					<h6 class="dis-2">部门</h6><p class="dis-8"><select disabled class="input-control userinfoInput userinfoSelect">
+					  <option>市场部</option>
+					  <option>客户部</option>
+					  <option>技术部</option>
+					</select></p>
+				</div>
+				<div>
+					<h6 class="dis-2">职位</h6><p class="dis-8"><select disabled class="input-control userinfoInput userinfoSelect">
+					  <option>市场部经理</option>
+					  <option>业务员</option>
+					  <option>工程师</option>
+					</select></p>
+				</div>
+				<div>
+					<h6 class="dis-2">级别</h6><p class="dis-8"><select disabled class="input-control userinfoInput userinfoSelect">
+					  <option>正级管理者<i class="iconfont icon-star"></i></option>
+					  <option>副级管理者<i class="iconfont icon-star-O"></i></option>
+					  <option>普通职员</option>
+					</select></p>
+				</div>
+				<div>
+					<h6 class="dis-2">电话</h6><p class="dis-8"><span class="userinfoText">15068725443</span><input type="hidden" name="" class="userinfoInput"></p>
+				</div>
+				<div>
+					<h6 class="dis-2">邮箱</h6><p class="dis-8"><span class="userinfoText">15068725443@163.com</span><input type="hidden" name="" class="userinfoInput"></p>
+				</div>
+				<h4 class="ov-h">账户信息<span class="pull-right"><button class="btn-g">修改密码</button></span></h4>
+				<div>
+					<h6 class="dis-2">账号</h6><p class="dis-8">15068725443</p>
+				</div>
+				<div>
+					<h6 class="dis-2">密码</h6><p class="dis-8">***********</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!-- 头部弹窗 页面通用-->
+<div id="newCustomers">
+	<form class="staffForm">
+		<div>
+			<label for="" class="dis-2">公司名称</label><input type="text" placeholder="请输入公司名称" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">公司地址</label><input type="text" placeholder="请输入公司地址" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">联系人</label><input type="text" placeholder="请输入联系人姓名" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">联系方式</label><input type="text" placeholder="请输入联系人联系方式" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">邮箱</label><input type="text" placeholder="请输入联系人邮箱" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">备注</label><textarea class="dis-8" rows="5" placeholder="备注"></textarea>
+		</div>
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
+<!-- 会议弹窗 页面通用-->
+<div id="meeting">
+	<div class="meeting-title">
+		<a href="javascript:;" data-id="appointment" class="active">预约</a>
+		<a href="javascript:;" data-id="appointmented">已预约 <span class="meeting-num">2</span></a>
+	</div>
+	<div>
+		<div id="appointment">
+			<form class="staffForm">
+				<div>
+					<label for="" class="dis-2">会议主题</label><input type="text" placeholder="" class="dis-8">
+				</div>
+				<div>
+					<label for="" class="dis-2">会议时间</label><input type="text" name="datepicker" placeholder="选择日期"><input type="text" placeholder="选择时间" name="timepicker">
+				</div>
+				<div>
+					<label for="" class="dis-2">会议地点</label><input type="text" placeholder="" class="dis-8">
+				</div>
+				<div>
+					<span class="dis-2">参会人员</span><div class="dis-8">
+						<i class="icon iconfont icon-plus-circle"></i>
+						<div class="dropdownMenu">
+				            		<div class="dropdownMenu-search">
+				            			<input type="text" placeholder="输入员工名称">
+				            			<i class="icon iconfont icon-search"></i>
+				            		</div>
+				            		<div class="dropdownMenu-main">
+				            			<ul class="dropdownMenu-addStaff">
+					            			<li><a href=""><img class="avatar" src="http://up.qqjia.com/z/25/tu32695_9.jpg">韩一</a></li>
+					            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">章三</a></li>
+					            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">李四</a></li>
+					            		</ul>	
+				            		</div>	
+				            	</div>
+					</div>
+				</div>
+			</form>
+			<div class="jBoxfooter">
+				<button>预约</button>
+				<button>立即开始</button>
+				<p>预约后会通知所有参会人员</p>
+			</div>
+
+		</div>
+		<div id="appointmented">
+			<div class="appointmented-item">
+				<h4><span>生产部例会</span><span class="pull-right"><s>孙灵光</s> 预约<mark>会议中</mark></span></h4>
+				<p>时间：<s>2016-12-22</s><s>08:00</s></p>
+				<p>地点：<s>3幢203会议室</s></p>
+			</div>
+			<div class="appointmented-item">
+				<h4><span>生产部例会</span><span class="pull-right"><s>孙灵光</s> 预约</span></h4>
+				<p class="pull-right">
+					<button>修改</button>
+					<button>开始</button>
+				</p>
+				<p>时间：<s>2016-12-22</s><s>08:00</s></p>
+				<p>地点：<s>3幢203会议室</s></p>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<!-- <script src="./asset/js/bootstrap.min.js"></script> -->
+<script src="./asset/js/jquery-2.2.3.min.js"></script>
+<script src="./asset/js/jBox.min.js"></script>
+<script src="./asset/js/jquery.slimscroll.min.js"></script>
+<!-- 本页日期选择插件 -->
+<script src="./asset/js/bootstrap-datepicker.js"></script>
+<script src="./asset/js/jquery.timepicker.min.js"></script>
+<script src="./asset/js/global.js"></script>
+<script type="text/javascript">
+$(function(){
+	//编辑 按钮
+	$(document).on('click','#edit',function(){
+		var _text = $(this).text();
+		if(_text == '编辑'){
+			$(this).text('完成')
+			var _span = $(".userinfo input[type='hidden']").prev();
+			var arr = [];
+			for(var i = 0;i<_span.length;i++){
+				arr.push(_span[i].innerText)
+			};
+			$(".userinfo input[type='hidden']").attr('type','text').each(function(index,el){
+				el.value = arr[index] 
+			});
+			$('.userinfo .dis-8 select').prop('disabled',false).addClass('addselect')//select
+			$('.userinfoText').text('')
+			$('.avatarShade').show()
+		}else {
+			$(this).text('编辑');
+		
+			var _input = $(".userinfo input[type='text']");
+			var arr1 =[];
+			for(var i = 0;i<_input.length;i++){
+				console.log(_input[i].value)
+				arr1.push(_input[i].value)
+			}
+			console.log(arr1)
+			$('.userinfoText').each(function(index,el){
+				el.innerText = arr1[index]
+			});
+			$(".userinfo input[type='text']").attr('type','hidden');
+			$('.userinfo .dis-8 select').prop('disabled',true).removeClass("addselect");//select
+			$('.avatarShade').hide()
+		}
+	})
+
+	// $('.userinfo').slimScroll({
+	// 	// height:'calc(100% - (40px))'
+	// })
+})
+</script>
+</body>
+</html>

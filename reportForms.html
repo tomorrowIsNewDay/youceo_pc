@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>有策管理 报表</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./asset/css/iconfont.css">  
+  <!-- 本页日期选择插件 -->
+ <link rel="stylesheet" href="./asset/css/datepicker3.css">
+ <link rel="stylesheet" href="./asset/css/jquery.timepicker.min.css">
+  <!-- 本页 dialog 插件 -->
+  <link href="./asset/css/jBox.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./asset/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="logo pull-left">
+			<a href=""><img src="./asset/images/youceo.png"></a>
+		</div>
+		<nav class="leftNav pull-left">
+			<ul>
+				<li><a href="drive.html">推动</a></li>
+				<li><a href="taskList.html">任务</a></li>
+				<!-- <li><a href="">项目</a></li> -->
+				<li><a href="jobAccount.html">工作统计</a></li>
+				<li><a href="jobAnalysis.html">工作分析</a></li>
+				<li><a href="reportForms.html" class="active">报表</a></li>
+				<li><a href="crm.html">CRM</a></li>
+			</ul>	
+		</nav>
+		<nav class="rightNav pull-right">
+			<ul>
+				<li><a href="javascript:;" id="add-a"><i class="icon iconfont icon-plus-circle headericon"></i></a>
+					<ul class="avatar-menu">
+						<li><a href="addTask.html"><i class="icon iconfont icon-plus-circle"></i>新增任务</a></li>
+						<li><a href="" id="newCustomers-a"><i class="icon iconfont icon-add_people"></i>新增客户</a></li>
+					</ul>
+				</li>
+				<li><a href=""><i class="icon iconfont icon-chat headericon"></i></a></li>
+				<li>
+					<a href="javascript:;" id="avatar-a"><img  class="avatar avatar-34" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></a>
+					<ul class="avatar-menu">
+						<li><a href="userinfo.html"><i class="iconfont icon-personal-data"></i>个人资料</a></li>
+						<li><a href="cloudDisk.html"><i class="iconfont icon-cloud-disk"></i>云盘</a></li>
+						<li><a href="" id="meeting-a"><i class="iconfont icon-meeting"></i>会议模式</a></li>
+						<li><a href="workflow.html"><i class="icon iconfont icon-workflow"></i>工作流管理</a></li>
+						<li><a href="org.html"><i class="iconfont icon-mail-list"></i>组织架构</a></li>
+						<li><a href=""><i class="iconfont icon-Enterprise_information"></i>权限设置</a></li>
+						<li><a href=""><i class="iconfont icon-exit"></i>退出</a></li>
+					</ul>
+				</li>
+			</ul>		
+		</nav>
+	</header>
+	<div class="wrapperNav">
+		<ul class="wrapperNav-tittle tc">
+			<li><a href="javascript:;"  class="active" data-id='dutyForms'>职责报表</a></li>
+			<li><a href="javascript:;" data-id="workflowForms">工作流表</a></li>
+		</ul>
+	</div>
+	<div class="wrapperLeft t100 r0 ov-h">
+		<div class="forms">
+			<div id="dutyForms">
+				<div class="forms-main">
+					<table width="100%">
+						<thead>
+							<tr>
+								<th class="pl20">问题内容</th>
+								<th>来源</th>
+								<th>时间</th>
+								<th>操作</th>		
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="pl20">设计评审工作流</td>
+								<td><img  class="avatar avatar-34 itype" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"><div><h4>孙灵光</h4><p>用户体验部</p></div></td>
+								<td>2016-12-11  14:22</td>
+								<td><button class="btn-g">指派</button></td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="workflowForms">
+				<div class="forms-main">
+					<table width="100%">
+						<thead>
+							<tr>
+								<th class="pl20">工作流</th>
+								<th>任务名称</th>
+								<th>发起人</th>
+								<th>关联客户</th>
+								<th>完成时间</th>
+								<th>审批人</th>
+								<th>附件</th>			
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="pl20">设计评审工作流</td>
+								<td>2.110型产品设计评审</td>
+								<td><img  class="avatar avatar-34 itype" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"><div><h4>孙灵光</h4><p>用户体验部</p></div></td>
+								<td><img  class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></td>
+								<td>2016-12-11  14:22</td>
+								<td><img  class="avatar avatar-34 itype" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"><span>等6人</span></td>
+								<td><span class="dropSpan"><i class="icon iconfont icon-word c-darkblue itype"></i>2</span>
+									<div class="dropdownMenu w300 r0">
+							            		<div class="dropdownMenu-main">
+							            			<ul class="dropdownMenu-addAttachment">
+								            			<li><a href=""><i class="icon iconfont icon-word itype"></i>2016-12-01.doc<span class="pull-right"><i class="icon iconfont icon-download itype"></i><i class="icon iconfont icon-close itype"></i></span></a></li>
+								            			<li><a href=""><i class="icon iconfont icon-word itype"></i>2016-12-01.doc<span class="pull-right"><i class="icon iconfont icon-download itype"></i><i class="icon iconfont icon-close itype"></i></span></a></li>
+								            			
+								            		</ul>	
+							            		</div>	
+							            	</div>		
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+<!-- 头部弹窗 页面通用-->
+<div id="newCustomers">
+	<form class="staffForm">
+		<div>
+			<label for="" class="dis-2">公司名称</label><input type="text" placeholder="请输入公司名称" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">公司地址</label><input type="text" placeholder="请输入公司地址" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">联系人</label><input type="text" placeholder="请输入联系人姓名" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">联系方式</label><input type="text" placeholder="请输入联系人联系方式" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">邮箱</label><input type="text" placeholder="请输入联系人邮箱" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">备注</label><textarea class="dis-8" rows="5" placeholder="备注"></textarea>
+		</div>
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
+<!-- 会议弹窗 页面通用-->
+<div id="meeting">
+	<div class="meeting-title">
+		<a href="javascript:;" data-id="appointment" class="active">预约</a>
+		<a href="javascript:;" data-id="appointmented">已预约 <span class="meeting-num">2</span></a>
+	</div>
+	<div>
+		<div id="appointment">
+			<form class="staffForm">
+				<div>
+					<label for="" class="dis-2">会议主题</label><input type="text" placeholder="" class="dis-8">
+				</div>
+				<div>
+					<label for="" class="dis-2">会议时间</label><input type="text" name="datepicker" placeholder="选择日期"><input type="text" placeholder="选择时间" name="timepicker">
+				</div>
+				<div>
+					<label for="" class="dis-2">会议地点</label><input type="text" placeholder="" class="dis-8">
+				</div>
+				<div>
+					<span class="dis-2">参会人员</span><div class="dis-8">
+						<i class="icon iconfont icon-plus-circle"></i>
+						<div class="dropdownMenu">
+				            		<div class="dropdownMenu-search">
+				            			<input type="text" placeholder="输入员工名称">
+				            			<i class="icon iconfont icon-search"></i>
+				            		</div>
+				            		<div class="dropdownMenu-main">
+				            			<ul class="dropdownMenu-addStaff">
+					            			<li><a href=""><img class="avatar" src="http://up.qqjia.com/z/25/tu32695_9.jpg">韩一</a></li>
+					            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">章三</a></li>
+					            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">李四</a></li>
+					            		</ul>	
+				            		</div>	
+				            	</div>
+					</div>
+				</div>
+			</form>
+			<div class="jBoxfooter">
+				<button>预约</button>
+				<button>立即开始</button>
+				<p>预约后会通知所有参会人员</p>
+			</div>
+
+		</div>
+		<div id="appointmented">
+			<div class="appointmented-item">
+				<h4><span>生产部例会</span><span class="pull-right"><s>孙灵光</s> 预约<mark>会议中</mark></span></h4>
+				<p>时间：<s>2016-12-22</s><s>08:00</s></p>
+				<p>地点：<s>3幢203会议室</s></p>
+			</div>
+			<div class="appointmented-item">
+				<h4><span>生产部例会</span><span class="pull-right"><s>孙灵光</s> 预约</span></h4>
+				<p class="pull-right">
+					<button>修改</button>
+					<button>开始</button>
+				</p>
+				<p>时间：<s>2016-12-22</s><s>08:00</s></p>
+				<p>地点：<s>3幢203会议室</s></p>
+			</div>
+		</div>
+	</div>	
+</div>
+ <!-- 审批人 详情 -->
+<div id="approval">
+	<ul>
+		<li>
+			<img  class="avatar itype pull-left" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+			<div class="cell">
+				<h4>孙灵光<span class="pull-right">2016-11-12  14:22</span></h4>
+				<p>好的，没问题，通过</p>
+			</div>
+		</li>
+		<li>
+			<img  class="avatar itype pull-left" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+			<div class="cell">
+				<h4>孙灵光<span class="pull-right">2016-11-12  14:22</span></h4>
+				<p>好的，没问题，通过</p>
+			</div>
+		</li>
+		<li>
+			<img  class="avatar itype pull-left" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+			<div class="cell">
+				<h4>孙灵光<span class="pull-right">2016-11-12  14:22</span></h4>
+				<p>好的，没问题，通过</p>
+			</div>
+		</li>
+		<li>
+			<img  class="avatar itype pull-left" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+			<div class="cell">
+				<h4>孙灵光<span class="pull-right">2016-11-12  14:22</span></h4>
+				<p>好的，没问题，通过</p>
+			</div>
+		</li>
+		<li>
+			<img  class="avatar itype pull-left" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+			<div class="cell">
+				<h4>孙灵光<span class="pull-right">2016-11-12  14:22</span></h4>
+				<p>好的，没问题，通过</p>
+			</div>
+		</li>
+		<li>
+			<img  class="avatar itype pull-left" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+			<div class="cell">
+				<h4>孙灵光<span class="pull-right">2016-11-12  14:22</span></h4>
+				<p>好的，没问题，通过</p>
+			</div>
+		</li>
+	</ul>	
+</div>
+<!-- 指派弹窗-->
+<div id="appoint">
+	<form class="staffForm">
+		<div>
+			<label for="" class="dis-2">任务内容</label><textarea class="dis-8" rows="5"></textarea>
+		</div>
+		<div>			
+			<span class="dis-2">员工</span><div class="dis-8">
+				<span class="avatar relative"><i class="icon iconfont icon-plus-circle itype dropdownIcon"></i></span>
+				<div class="dropdownMenu" style="margin-top: 0;margin-left: 0">
+		            		<div class="dropdownMenu-search">
+		            			<input type="text" placeholder="输入员工名称">
+		            			<i class="icon iconfont icon-search"></i>
+		            		</div>
+		            		<div class="dropdownMenu-main">
+		            			<ul class="dropdownMenu-addStaff">
+			            			<li><a href=""><img class="avatar" src="http://up.qqjia.com/z/25/tu32695_9.jpg">韩一</a></li>
+			            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">章三</a></li>
+			            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">李四</a></li>
+			            		</ul>	
+		            		</div>	
+		            	</div>
+			</div>			
+		</div>
+		<div>
+			<label for="" class="dis-2">目标名</label><input type="text" placeholder="请输入目标名" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">目标值</label><input type="text" placeholder="请输入目标值" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">时间</label><input type="text" class="dis-8">
+		</div>
+		<div>
+			<span class="dis-2">关联</span><div class="dis-8">
+				<span class="avatar relative"><i class="icon iconfont icon-plus-circle itype dropdownIcon"></i></span>
+				<div class="dropdownMenu" style="margin-top: 0;margin-left: 0">
+		            		<div class="dropdownMenu-search">
+		            			<input type="text" placeholder="输入客户名称">
+		            			<i class="icon iconfont icon-search"></i>
+		            		</div>
+		            		<div class="dropdownMenu-main">
+		            			<ul class="dropdownMenu-addStaff">
+			            			<li><a href=""><img class="avatar" src="http://up.qqjia.com/z/25/tu32695_9.jpg">韩一</a></li>
+			            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">章三</a></li>
+			            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">李四</a></li>
+			            		</ul>	
+		            		</div>	
+		            	</div>
+			</div>	
+		</div>
+		<div>
+			<span class="dis-2">附件</span><div class="dis-8">
+				<span><i class="icon iconfont icon-plus-circle itype dropdownIcon"></i></span>
+				<div class="dropdownMenu w300" style="margin-top: 0;margin-left: 0!important">
+		            		<div class="dropdownMenu-btn tc pt10">
+		            			<label for="fileA"><i class="icon iconfont icon-fujian"></i>上传附件</label>
+						<form><input type="file" id="fileA"></form>
+		            		</div>
+		            		<div class="dropdownMenu-main">
+		            			<ul class="dropdownMenu-addAttachment">
+			            			<li><a href=""><i class="icon iconfont icon-word itype"></i>2016-12-01.doc<span class="pull-right"><i class="icon iconfont icon-download itype"></i><i class="icon iconfont icon-close itype"></i></span></a></li>
+			            			
+			            		</ul>	
+		            		</div>	
+		            	</div>
+			</div>	
+		</div>
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
+<script src="./asset/js/jquery-2.2.3.min.js"></script>
+<script src="./asset/js/jquery.slimscroll.min.js"></script>
+<!-- 本页日期选择插件 -->
+<script src="./asset/js/bootstrap-datepicker.js"></script>
+<script src="./asset/js/jquery.timepicker.min.js"></script>
+<script src="./asset/js/jBox.min.js"></script>
+<script src="./asset/js/global.js"></script>
+<script type="text/javascript">
+$(function(){
+	var approval = new jBox('Modal', {
+		  // attach: '#newCustomers-a',
+		  width:'400px',
+		  animation: 'pulse',
+		  title: '审批人',
+		  content: $('#approval'),
+		  preventDefault:true
+	});
+	var appoint = new jBox('Modal', {
+		  // attach: '#newCustomers-a',
+		  width:'400px',
+		  animation: 'pulse',
+		  title: '指派',
+		  content: $('#appoint'),
+		  preventDefault:true
+	});
+	// jBox 取消按钮
+	$('.closejBox').on('click',function(){
+		appoint.close();
+	})
+	//云盘 nav 按钮 切换
+	$('.wrapperNav-tittle>li>a').on('click',function(){
+		$('.wrapperNav-tittle>li>a').removeClass('active');
+		$(this).addClass('active');
+
+		var thisid = $(this).data('id');
+		$(".forms>div").each(function(){
+			if( this.id == thisid){
+				$(this).fadeIn().siblings().hide()
+			}
+		})
+	})
+	$(document).on("click","#workflowForms tbody td:nth-child(6)",function(){
+		approval.open()
+	})
+	$(document).on('click','#dutyForms tbody td button',function(){
+		appoint.open()
+	})
+	// dorpdown 指派弹窗下拉框
+	$(document).on('click','.dropdownMenu-addStaff>li>a',function(){
+		dorpdown($(this))
+		return false
+	})
+	// 关闭 图标
+	$(document).on('click','.delIcon',function(){
+		$(this).parent().html('<i class="icon iconfont icon-plus-circle itype dropdownIcon"></i>')
+	})
+	// dropdown
+	$(document).on('click','.dropSpan',function(){
+		$(this).next('.dropdownMenu').slideToggle()
+	})	
+})
+</script>
+</body>
+</html>

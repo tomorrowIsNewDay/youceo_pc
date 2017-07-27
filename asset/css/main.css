@@ -1,0 +1,1722 @@
+body{
+    line-height:1.4;
+    color:rgb(51,51,51);
+    // font-family:Helvetica Neue,Helvetica,Arial,'PingPang SC','华文细黑','Microsoft Yahei','宋体',sans-serif;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei",sans-serif;
+    font-size: 12px
+}
+input,textarea,select{
+    padding:0;
+    font-size:12px;
+    font-size:100%;    
+    font-family:arial;
+    font-family:inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form,dl,dd{
+    margin:0;
+}
+h4,h5,h6{
+    font-size:1em;
+    font-weight: normal;
+}
+ul,ol{
+    padding-left:0; 
+    list-style-type:none;
+}
+
+th{font-weight: normal;}
+/*image with no-border*/
+a,a:hover{text-decoration: none}
+a img{border:0;}
+img{border:0;}
+button,.dropSpan{cursor: pointer;}
+// input{width: 100%;}
+s{text-decoration: none}
+.va-m{vertical-align: middle;}
+.va-t{vertical-align: top!important}
+.ov-h{overflow: hidden!important}
+.tc{text-align: center;}
+.tr{text-align: right!important;}
+.relative{position: relative;}
+.jBox-title{text-align: center;background: #fff!important;font-size: 14px;padding: 15px 20px!important;border-bottom:none!important}
+.jBox-closeButton path{fill:rgb(166,215,255)}
+/*style reset*/
+.datepicker .table>thead>tr>th,.datepicker  .table>tbody>tr>th,.datepicker  .table>tfoot>tr>th,.datepicker  .table>thead>tr>td,.datepicker  .table>tbody>tr>td,.datepicker  .table>tfoot>tr>td{
+        border-bottom: 1px solid #f4f4f4
+}
+.datepicker.dropdown-menu th, .datepicker.dropdown-menu td{
+        padding: 0
+}
+/* 块状元素水平居中 */
+.auto{margin-left:auto; margin-right:auto;}
+/* 清除浮 动*/
+.fix{*zoom:1;}
+.fix:after{display:table; content:''; clear:both;}
+/* 基于display:table-cell的自适应布局 */
+.cell{display:table-cell; *display:inline-block; width:2000px; *width:auto;}
+/* 双栏自适应cell部分连续英文字符换行 */
+.cell_bk{display:table; width:100%; table-layout:fixed; word-wrap:break-word;}
+/* 单行文字溢出虚点显 示*/
+.ell{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+/* 大小不定元素垂直居中 */
+.dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
+/* 加载中背景图片 - 如果您使用该CSS小库，务必修改此图片地址 */
+.loading{background:url(http://www.zhangxinxu.com/study/image/loading.gif) no-repeat center;}
+/* 无框文本框文本域 */
+.bd_none{border:0; outline:none;}
+/* 绝对定位隐藏 */
+.abs_out{position:absolute; left:-999em; top:-999em;}
+.abs_clip{position:absolute; clip:rect(0 0 0 0);}
+/* 按钮禁用 */
+.disabled{color:#acacac!important; border-color:#acacac!important; text-shadow:1px 1px #fff!important; outline:0!important; cursor:default!important; pointer-events:none;}
+.disabled:hover{text-decoration:none!important;}
+/*两栏布局*/
+.dis-3{
+        display: inline-block;
+        *display:inline;
+        width: 29%
+}
+.dis-7{
+        display: inline-block;
+        *display:inline;
+        width: 69%
+}
+.dis-2{
+        display: inline-block;
+        *display:inline;
+        width: 19%;
+}
+.dis-8{
+        display: inline-block;
+        *display:inline;
+        width: 79%
+}
+.rotate90{
+        display: inline-block;
+        -ms-transform: rotate(90deg);       /* IE 9 */
+        -ms-transition: all .5s ease;       /* IE 9 */
+        -webkit-transform: rotate(90deg);   /* Safari 和 Chrome */
+        -webkit-transition: all .5s ease;   /* Safari 和 Chrome */
+        -moz-transform: rotate(90deg);      /* Firefox */
+        -moz-transition: all .5s ease;      /* Firefox */
+        -o-transform: rotate(90deg);        /* Opera */
+        -o-transition: all .5s ease;
+        transform:rotate(90deg);
+        transition: all .5s ease;
+}
+.rotate0{
+        display: inline-block;
+        -ms-transform: rotate(0deg);       /* IE 9 */
+        -ms-transition: all .5s ease;       /* IE 9 */
+        -webkit-transform: rotate(0deg);   /* Safari 和 Chrome */
+        -webkit-transition: all .5s ease;   /* Safari 和 Chrome */
+        -moz-transform: rotate(0deg);      /* Firefox */
+        -moz-transition: all .5s ease;      /* Firefox */
+        -o-transform: rotate(0deg);        /* Opera */
+        -o-transition: all .5s ease;
+        transform:rotate(0deg);
+        transition: all .5s ease;
+}
+:root{
+        --darkblue:rgb(41,149,231);
+        --ligthgray:rgb(204,204,204);
+        --gray:rgb(170,170,170);
+        --grayer:rgb(238,238,238);
+}
+.c-thead,.c-text{color: rgb(153,153,153)!important}
+.c-white{color: #fff!important}
+.c-overTime{color:rgb(255,131,131)!important}
+.c-gray{color: rgb(170,170,170)}
+.c-draft{color: rgb(62,216,96)!important}
+.c-darkblue{color: rgb(41,149,231)!important}
+.bg-darkblue{background: rgb(41,149,231)}
+.bg-ligthgray{background: rgb(204,204,204)}
+.bg-grayer{background: rgb(238,238,238)}
+.bg-white{background: #fff!important}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.pt10{padding-top: 10px}
+.pl10{padding-left: 10px;}
+.pl20{padding-left: 20px}
+.pl30{padding-left: 30px}
+.mr10{margin-right: 10px}
+.ml10{margin-left: 10px}
+.f12{font-size: 12px;}
+.f14{font-size: 14px}
+.f15{font-size: 1.5em}
+.f22{font-size: 22px}
+.headericon{font-size: 22px;vertical-align: middle;}
+.w300{width: 300px!important;margin-left:-300px!important}
+.itype{margin-right: 10px;color: rgb(41,149,231);font-size: 1.5em;vertical-align: middle;-webkit-text-size-adjust:none}
+.istatus{margin-left: -15px}
+i.icon-star,i.icon-star-O{;font-size: 10px;color: rgb(241,178,0)}
+.icon-refresh{
+    -webkit-animation:refresh 1s infinite linear;
+    -moz-animation:refresh 1s infinite linear;
+    -ms-animation:refresh 1s infinite linear;
+    -o-animation:refresh 1s infinite linear}
+@-webkit-keyframes refresh
+{
+0 {-webkit-transform:rotate(0deg)}
+25% {-webkit-transform:rotate(90deg)}
+50% {-webkit-transform:rotate(180deg)}
+75% {-webkit-transform:rotate(270deg);}
+100% {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes refresh
+{
+0 {-moz-transform:rotate(0deg);}
+25% {-moz-transform:rotate(90deg);}
+50% {-moz-transform:rotate(180deg);}
+75% {-moz-transform:rotate(270deg);}
+100% {-moz-transform:rotate(360deg);}
+}
+@-o-keyframes refresh
+{
+0 {-o-transform:;rotate(0deg)}
+25% {-o-transform:;rotate(90deg);}
+50% {-o-transform:;rotate(180deg)}
+75% {-o-transform:;rotate(270deg);}
+100% {-o-transform:;rotate(360deg);}
+}
+@keyframes refresh
+{
+0 {transform:rotate(0deg)}
+25% {transform:rotate(90deg)}
+50% {transform:rotate(180deg)}
+75% {transform:rotate(270deg)}
+100% {transform:rotate(360deg)}
+}
+
+.input-control{
+            display: block;
+            width:100%;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            border-radius: 2px;
+            border: 1px solid rgb(238,238,238);
+            background: #fff;
+}
+.btn-g{
+            display: inline-block;
+            padding:5px 10px;
+            color: #fff;
+            border:1px solid transparent;
+            border-radius: 2px;
+            background: rgb(41,149,231);
+}
+.overlay{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;z-index: 50;
+        background: rgba(255,255,255,0.7);
+        border-radius: 3px;
+}
+.overlay i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        color: #000;
+        font-size: 30px
+}
+html, body, .wrapper {
+           height: 100%; 
+           width: 100%;
+           overflow: hidden;
+}
+.wrapper {
+           position: absolute; left: 0; top: 0;
+           background-color: rgb(241,241,241);
+           box-shadow: 0 1px 2px rgb(220,222,224)
+}
+header,.content{
+            position: absolute;left: 0;
+}
+header{
+            top:0;
+            right: 0;
+            height: 50px;
+            background-color: rgb(41,149,231);
+            box-shadow: 0 1px 2px rgb(152,152,152);
+}
+.leftNav li{
+            float: left;
+            margin-left:40px       
+}
+.rightNav>ul>li{
+            float: left;
+            margin-right:40px       
+}
+.leftNav li a,.rightNav>ul>li>a{
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            color:rgb(255,255,255)
+}
+.leftNav li a{opacity: .5}
+.leftNav li a:hover,.leftNav .active{
+            opacity: 1
+}
+.rightNav>ul>li:first-child .avatar-menu{right: 170px}
+/*header 点击头像 下拉*/
+.avatar-menu{
+            display: none;
+            position: absolute;
+            z-index: 2;
+            right: 40px;
+            width: 125px;
+            padding-left: 15px;
+            font-size: 14px;
+            line-height: 40px;
+            border-radius: 2px;
+            box-shadow: 0 2px 2px rgb(152,152,152);
+            background: #fff;
+}
+/*header 点击头像 下拉框 小三角*/
+.avatar-menu:before{
+            content: '';
+            position: absolute;
+            top:-4px;
+            right: 12px;
+            width: 0;
+            height: 0;
+            color: #fff;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid #fff;
+
+}
+.avatar-menu>li>a,.cloud-menu>li>a{
+            color: rgb(51,51,51);
+            cursor: pointer;
+}
+.avatar-menu>li>a>i{
+            margin-right: 10px;
+            color: rgb(41,149,231)
+}
+.avatar-menu>li>a:hover,.cloud-menu>li>a:hover{
+            color: rgb(41,149,231)
+}
+.avatar{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 12px;
+            color: #fff;
+            border-radius: 50%;
+            vertical-align: middle;
+}
+.avatar-34{
+            width: 34px;
+            height: 34px;
+            line-height:34px;
+            color: #fff;
+}
+.iconType{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            // -webkit-transform: scale(0.8); 
+            font-size: 10px;
+            color: rgb(41,149,231);
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+}
+.content{
+            top:50px;
+            right:0;
+            padding: 0 30px 0 20px
+}
+.task-table{
+            border-spacing: 0 10px
+}
+.task-tr{
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            background: rgb(249,249,249);
+}
+.task-tr.active,.task-tr:hover{
+            background: #fff;         
+            box-shadow: 0 1px 2px rgb(220,222,224)
+}
+.task-tr input{
+            width: 100%;
+            border:none
+}
+.task-tr input:focus,.task-td-btn button:focus,button:focus{
+            outline:none
+}
+.task-tr .icon-plus{
+            color: rgb(166,215,255)
+}
+.task-tr .icon-plus:hover{
+            color: rgb(41,149,231)
+}
+.task-td-btn{
+            text-align: center;
+            background: rgb(241,241,241);
+}
+.task-td-btn button:first-child{
+            padding: 5px 10px;
+            margin-right: 10px;
+            color: #fff;
+            line-height: 1;
+            border-radius: 100px;
+            border:1px solid transparent;
+}
+.task-td-btn button:not(:first-child){
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            line-height: 24px;
+            color:#fff;      
+            border-radius: 50%;
+            border: 1px solid transparent;
+}
+.task-td-btn .disabled-release,.task-td-btn .disabled-close,.task-td-btn .disabled-copy{
+            background: rgb(204,204,204);
+            cursor: no-drop
+}
+.task-td-btn .abled-release{
+            background: rgb(41,149,231);
+            cursor: pointer;
+}
+.task-td-btn .abled-close,.task-td-btn .abled-copy{
+            background: rgb(170,170,170);
+            cursor: pointer;
+}
+.dropdownMenu{
+            display: none;
+            position: absolute;
+            z-index: 2;
+            width: 200px;
+            height: 300px;
+            margin-left: -200px;
+            margin-top: -5px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 1px 2px rgba(68,68,68,.5)
+}
+.dropdownMenu-search{
+            position: relative;
+            padding: 15px 10px;
+            line-height: 30px;
+            border-bottom: 1px solid rgb(238,238,238)
+}
+.dropdownMenu input{
+            min-height: 30px;
+            width: 100%;
+            text-indent: 10px;
+            line-height: 30px;
+            background: rgb(241,241,241);
+            border: 1px solid transparent;
+            border-radius: 100px
+}
+.dropdownMenu .icon-search{
+            position: absolute;
+            right:10%;
+            color: rgb(41,149,231)
+}
+.dropdownMenu .dropdownMenu-main{
+            height: 239px;
+            overflow: auto;
+            padding-left: 20px;
+}
+.dropdownMenu ul>li{
+            line-height: 40px;
+            border-bottom: 1px solid rgb(238,238,238)
+}
+.dropdownMenu ul>li>a{
+            color: rgb(153,153,153)
+}
+.dropdownMenu ul>li>a:hover{
+            color: rgb(41,149,231)
+}
+.workFlow{
+            display: inline-block;
+            padding: 0 10px;
+            height: 24px;
+            line-height: 24px;
+            color: #fff;
+            font-size: 12px;
+            background: rgb(166,215,255);
+
+}
+.workFlow>i{
+            visibility: hidden;
+            margin-left: 10px;
+            vertical-align: middle;
+}
+.workFlow:hover i{
+            visibility: visible;
+}
+
+/*关联客户 下拉框*/
+.dropdownMenu-main h4{
+            margin-left: -20px;
+            padding-left: 20px;
+            line-height: 40px;
+            border-bottom: 1px solid rgb(238,238,238)
+}
+.dropdownMenu-main .avatar{
+            margin-right:10px
+}
+/*客户 下拉框*/
+.delIcon{
+        visibility: hidden;
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: -1px;
+        line-height: 27px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 50%;
+        background: rgba(41,149,237,.8);
+
+}
+.delIconMeet{
+        visibility: hidden;
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: -1px;
+        line-height: 1.4;
+        text-align: center;
+        font-size: 28px;
+        color: #fff;
+        border-radius: 50%;
+        background: rgba(41,149,237,.8);
+}
+.isSpan:hover .delIcon,.isSpan:hover .delIconMeet{visibility: visible;}
+/*附件 下拉框*/
+.dropdownMenu-addAttachment .pull-right{
+            visibility: hidden;
+}
+.dropdownMenu-addAttachment li:hover .pull-right{
+            visibility: visible;
+}
+/*新增任务 尾部的 完成按钮部分*/
+.addTask-footer{
+            float: right;
+            width: 10%;
+            margin-top:50px;
+            text-align: center;
+}
+.addTask-footer>button,.dropdownMenu-btn>label,.attachment-btn>label{
+            display: inline-block;
+            width: 110px;
+            margin-bottom: 20px;
+            padding: 0;
+            line-height: 30px;
+            color: #fff;
+            font-size: 14px;
+            background: rgb(41,149,231);
+            border:none;
+            border-radius: 2px;
+}
+#fileA,#fileImg{
+            position: absolute;
+            display: none
+}
+/* 推动界面*/
+.wrapperLeft,.wrapperRight{
+            position: absolute;
+            top:50px;
+            bottom: 0;
+}
+.wrapperLeft{
+            left: 0;
+            right: 400px;
+            overflow: auto;
+}
+.wrapperRight{
+            right: 0;
+            width: 400px;background: #fff
+}
+.wrapperRight-tittle{
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 38px;
+            line-height: 38px;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 1px 0 rgba(238,238,238,.5)
+}
+.wrapperRight-tittle li{
+            display: inline-block;
+            margin: 0 20px;
+}
+.wrapperRight-tittle li a{
+            display: inline-block;
+            height: 35px;
+            color: rgb(153,153,153);
+            border-bottom: 3px solid transparent;
+            
+}
+.wrapperRight-tittle li a:hover,.wrapperRight-tittle li a.active{
+            color: rgb(41,149,231);
+            border-bottom: 3px solid rgb(41,149,231);           
+}
+.wrapperRight-main{
+            position: absolute;
+            top:38px;
+            left: 0;
+            right: 0;
+            bottom:60px;
+            overflow: hidden;
+}
+#detail,#moving,#attachment,#jobRecord{
+            float: left;
+            width: 400px;
+            height: 100%;
+}
+#moving>input{
+            width: 340px;
+            height: 32px;
+            margin: 20px;
+            padding: 0 10px;
+            border:1px solid rgb(166,215,255);
+            border-radius: 4px
+}
+#moving>ul>li{
+            padding: 10px 30px 10px 20px;
+            box-shadow:0 1px 0 rgba(238,238,238,.5) 
+
+}
+#moving>ul .cell h5{
+            color: rgb(153,153,153)
+}
+#moving>ul .cell p{
+            margin: 10px 0;
+            font-size: 14px;
+}
+#moving .moving-doc{
+            height: 36px;
+            line-height: 36px;
+            margin-left: -10px;
+            margin-right: -10px;
+            padding-left: 10px;
+            // padding-right: 10px;
+            color: rgb(41,149,231);
+            background: rgb(241,241,241);
+            border-radius: 2px;
+}
+#detail>div{
+            padding-left:22px;
+            padding-right: 22px;
+}
+#detail>div>h4,#detail .crmFirminfo>h4{
+            line-height: 50px;
+}
+#detail>div>h5{
+            margin: 0 -22px;
+            padding: 5px 22px;
+            font-size: 14px;
+            line-height: 1.5;
+            background: rgb(246,251,254)
+}
+
+.detail-top{
+            height: 55%;
+            border-bottom: 1px solid rgb(238,238,238)
+}
+.detail-top>div{
+            line-height: 20px
+}
+.detail-top .dis-7,.crmFirminfo .dis-7{
+            font-size: 14px;
+}
+.detail-top>div,.detail-bottom>div{
+            margin: 20px 0;
+}
+.detail-top .dis-3,.detail-bottom .dis-2,.crmFirminfo .dis-3{
+            color: rgb(153,153,153)
+}
+.detail-bottom{
+            max-height: 45%;
+            overflow-y:auto;
+}
+.detail-bottom input{
+            width: 100%;
+            height: 28px;
+            text-indent: 10px;
+            font-size: 14px;
+            border-radius: 2px;
+            border:1px solid rgb(238,238,238)
+}
+.input-btn{margin: 0 -4px}
+.input-btn>select{
+            -moz-appearance:none; 
+            -webkit-appearance:none;
+            appearance:none;
+            height: 30px;
+            color: rgb(41,149,231);
+            vertical-align: middle;
+            // text-indent: 10px;
+            padding-left: 5px;
+            border-radius: 2px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top:1px solid rgb(238,238,238);
+            border-bottom: 1px solid rgb(238,238,238); 
+            border-left: 1px solid rgb(238,238,238); 
+            border-right:none;
+            // background: ;
+            background:transparent url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center ;
+}
+.input-btn input{
+            width: 69%!important;
+            vertical-align: middle;
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+}
+#attachment>div{
+            padding: 15px 20px 0 20px
+}
+#attachment .attachment-main li{
+            margin:0 -20px;
+            padding: 10px 20px;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(238,238,238,.5)
+}
+.attachment-main li>a{
+            color: rgb(153,153,153)
+}
+.attachment-main li i{
+            color:rgb(41,149,231);
+            font-size: 1.5em
+}
+.wrapperRight-footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            text-align: center;
+}
+.wrapperRight-footer>a{
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+            line-height: 60px;
+            font-size: 14px;
+            cursor: pointer;
+}
+.wrapperRight-footer>a:first-child{
+            color: rgb(41,149,231);
+            background: #fff;
+            border-top:1px solid rgb(238,238,238)
+}
+.wrapperRight-footer>a:nth-child(2){
+            color: #fff;
+            background: rgb(41,149,231);
+            border-top:1px solid rgb(41,149,231)
+}
+.driveStatus{
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 5px;
+            color: #fff;
+            background: rgb(255,153,56);
+            border-radius: 20px 0 0 20px;
+}
+.driveStatus .mr10{margin-right: 5px}
+.driveStatus .ml10{margin-left: 5px}
+.grayTable tr td:nth-child(1),.grayTable thead,.grayTable tr td:nth-child(5){
+            font-size: 12px;
+            color: rgb(153,153,153)
+}
+/* 任务列表界面*/
+.t100{top:100px!important}
+.wrapperNav{
+            position: absolute;
+            top:50px;
+            left: 0;
+            right: 0;
+            height: 49px;
+            line-height: 49px;
+            background: #fff;
+            box-shadow: 0 1px 0 rgba(204,204,204,.5),0 -1px 0 rgba(204,204,204,.5)
+}
+.wrapperNav .breadCrumb>li{
+            float: left;
+            position: relative;
+            font-size: 14px
+}
+.breadCrumb{
+            padding-left: 30px;
+}
+.breadCrumb>li>a,.breadCrumbMenu>li>a{
+            color: rgb(51,51,51);
+            font-size: 14px;
+}
+.breadCrumb>li>a:hover,.breadCrumbMenu>li>a:hover{
+            color: rgb(41,149,231)
+}
+.breadCrumb li>a>img{margin-right: 10px}
+.breadCrumbMenu{
+            display: none;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            padding-left: 20px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 1px 2px rgba(68,68,68,.5)
+}
+.wrapperNav-date{
+            float: right;
+            margin-right: 400px;
+}
+.wrapperNav-date,.wrapperNav-date>a{
+            color: rgb(41,149,231)
+
+}
+.wrapperNav-date>a>i{
+            font-size: 20px;
+            vertical-align: middle;
+}
+/* 工作统计界面*/
+.r0{right: 0!important}
+ .wrapperNav-tittle>li{
+            display: inline-block;
+            margin: 0 20px;
+ } 
+ /* 有类似的 .wrapperRight-tittle*/
+.wrapperNav-tittle li a{
+            display: inline-block;
+            height: 47px;
+            font-size: 14px;
+            color: rgb(170,170,170);
+            border-bottom: 3px solid transparent;         
+}
+.wrapperNav-tittle li a:hover,.wrapperNav-tittle li .active{
+            color: rgb(41,149,231);
+            border-bottom:3px solid rgb(41,149,231)
+}
+#ranking,#personalStats,#compareStats{
+            height: 100%;
+            overflow: auto;
+}
+.rankingDate{
+            margin: 20px auto;
+            width: 200px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            color: rgb(41,149,231);
+            border-radius: 100px;
+            background: #fff;
+}
+.rankingDate>span{
+            margin:0 20px;
+}
+.rankingDate>a{
+            color: rgb(41,149,231);
+}
+.statsTable{
+            max-height:40%;overflow: auto;
+}
+#tableBox{
+            width: 50%;
+            margin: 0 auto;
+            height: -moz-calc(100% - (118px));
+            height: -webkit-calc(100% - (118px));
+            height: calc(100% - (118px));      
+            overflow-y: auto; 
+            background: #fff;      
+}
+.rankingTable{
+            width: 100%;
+            border-spacing: 0 10px;
+            text-align: center;
+
+}
+.myRankingData:before{
+            content: '我';
+            // position:absolute;
+            float: left;
+            height: 0;
+            width: 0;
+            margin-left: 10px;
+}
+.ranking-first,.ranking-second,.ranking-third{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            color:#fff;
+}
+.ranking-first{
+            background: rgb(252,217,20)
+}
+.ranking-second{
+            background: rgb(190,190,187)
+}
+.ranking-third{
+            background: rgb(236,179,105)
+}
+.taskNum:before,.praiseNum:before,.passNum:before,.notpassNum:before{
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 50%;
+            margin-right: 15px;
+            vertical-align: middle;
+}
+.taskNum:before{background: rgb(237,41,41)}
+.praiseNum:before{background: rgb(255,218,45)}
+.passNum:before{background: rgb(31,229,65)}
+.notpassNum:before{background: rgb(31,203,229)}
+#perChart,#comChart{min-width:400px;height:60%;}
+#personalStats tr,#compareStats tr{
+            height: 40px;
+            line-height: 40px
+}
+#personalStats td,#compareStats td{
+            width: 7%;
+}
+#personalStats thead td,#compareStats thead td{color: rgb(153,153,153)}
+#personalStats tbody tr:nth-child(odd),#compareStats tbody tr:nth-child(odd){background: #fff}
+/* 个人资料界面*/
+.infoWrapper{
+            position: absolute;
+            top:20px;
+            bottom:40px;
+            left: 0;
+            right: 0
+}
+.userinfo{
+            width: 40%;
+            height: -moz-calc(100% - 60px);
+            height: -webkit-calc(100% - 60px);
+            height: calc(100% - 60px);
+            margin: 0 auto;
+            padding: 20px 30px;
+            overflow-y: auto;
+            background: #fff;
+}
+.userinfo .dis-2{
+            color: rgb(170,170,170)
+}
+.userinfo .dis-8,.userinfo>h4{
+            font-size: 16px;
+}
+.userinfo>div{
+            margin: 30px 0;
+}
+.userinfoInput{
+            width: 80%;
+            // height: 30px;
+            line-height: 30px;
+            margin:-10px 0 -10px -10px;
+            font-size: 16px;
+            text-indent: 10px;
+            // padding-left: 10px;
+            border-radius: 2px;
+            border: 1px solid rgb(238,238,238)
+}
+.userinfoSelect{
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            appearance:none;
+            font-size: 16px;
+            color: rgb(51,51,51);
+            border:1px solid transparent;
+            padding-right: 14px;
+}
+select.userinfoSelect::-ms-expand { 
+            display: none; 
+            font-size: 16px;
+            color: rgb(51,51,51);
+            border:1px solid transparent;
+}
+.addselect{border:1px solid rgb(238,238,238);background:url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent}
+.userinfoTextarea{
+            resize:none;
+            color: rgb(51,51,51);
+            border:1px solid transparent!important;
+}
+.avatar-80{
+            width: 80px;
+            height: 80px;
+}
+
+/* 头像遮罩层*/
+.userinfo .avatarShade{
+            display: none;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin:auto;
+            text-align: center;
+            line-height: 80px;
+            font-size: 12px;
+            color: #fff;
+            border-radius: 50%;
+            background:rgba(0,0,0,.8) 
+}
+/* 组织架构*/
+.org{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.orgLeft{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 260px;
+    border-radius: 2px;
+    background: #fff;
+}
+.orgRight{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 0;
+    width: 920px;
+    border-radius: 2px;
+    background: #fff
+}
+.orgLeft>h4,.orgRight>h4{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    // color: rgb(41,149,231);
+    font-size: 14px;
+    box-shadow: 0 1px 1px rgb(238,238,238)
+}
+.orgLeft>h4,.orgRight>h4 a{
+    color: rgb(41,149,231)
+}
+.treeSearch{
+    padding: 20px 20px 15px 20px;
+    color: rgb(41,149,231)
+}
+.treeSearch>input{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 10px;
+    border-radius: 100px;
+    background: rgb(241,241,241);
+    border: 1px solid transparent;
+}
+.treeSearch .icon-search{
+    position: absolute;
+    margin-left: 75%;
+    margin-top:-24px
+}
+.treeSearch>input:focus{
+    outline: none
+}
+#rootUL{padding-right: 20px}
+#rootUL li{line-height: 40px;padding-left: 20px;font-size: 14px;}
+#rootUL li span>i:first-child{color: rgb(41,149,231)}
+#rootUL li span{display: block;}
+#rootUL li:hover>span{
+    color:rgb(41,149,231)
+}
+.tree{height: 100%}
+.tree .tree-folder,.tree .tree-item{
+    line-height: 40px;
+    // padding-left: 20px;
+    // padding-right: 20px
+}
+#rootUL i.pull-right{color: rgb(204,204,204)}
+.tree .tree-item:hover>span,.tree .tree-folder:hover>span{
+    color: red
+}
+.orgRight>h4>.pull-right i{
+    margin-right: 5px
+}
+.orgRight>h4>.pull-right>a:first-child{
+    margin-right: 20px
+}
+.orgRight>h5{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.orgRight>h5>a{
+    margin:0 10px;
+    color: rgb(204,204,204)
+}
+.orgRight>h5>a.active,.orgRight>h5>a:hover{
+    color: rgb(41,149,231)
+}
+.orgRight table tr{
+    height: 40px;
+    line-height: 40px
+}
+.orgRight tbody {
+    font-size: 14px
+}
+.orgRight tbody tr td:last-child i,.workflowItem>h5 i{
+    visibility: hidden;
+    cursor: pointer;
+}
+.orgRight tbody tr:hover>td:last-child i,.workflowItem:hover>h5 i{
+    visibility: visible;
+}
+.orgRight tbody tr td:last-child i:first-child,.workflowItem>h5 i:first-child{
+    margin-right: 30px;
+    color: rgb(41,149,231);
+}
+.orgRight tbody tr td:last-child i:last-child,.workflowItem>h5 i:last-child{
+    color: rgb(204,204,204)
+}
+/* 弹窗*/
+#newStaff,#newName,#delDept,#editStaff{
+    width: 360px;
+}
+#delDept,#delStaff,#delContact,#delWorkflow{width: 460px;margin: -10px 0;}
+#delDept>h3,#delStaff>h3,#delContact>h3,#delWorkflow>h3{margin-top:10px;font-size: 24px;font-weight: normal;}
+.staffForm>div{
+    margin-bottom: 15px;
+}
+.staffForm .dis-2{
+    text-align: center;
+    color: rgb(153,153,153)
+}
+.staffForm input[type='text'],.jBoxinput{
+    height: 30px;
+    line-height: 30px;
+    text-indent: 10px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid rgb(238,238,238);
+}
+.jBoxfooter{
+    margin: 30px 0 15px;
+    text-align: center;
+}
+.jBoxfooter button{
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    padding:0;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+.jBoxfooter button:first-child{
+    color: rgb(153,153,153);
+    background: #fff;
+}
+.jBoxfooter button:last-child{
+    color: #fff;
+    background: rgb(41,149,231);
+}
+.orgMore{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width:120px;
+    padding-left: 20px;
+    margin-top:-5px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(68,68,68,.5);
+    background: #fff;
+}
+.orgMore>li{
+    height: 40px;
+    line-height: 40px;
+}
+.orgMore>li>a{
+    color: rgb(51,51,51);
+    font-size: 14px;
+}
+.orgMore>li:hover>a{
+    color: rgb(41,149,231)
+}
+#jobManage table{border-collapse: collapse;border: 1px solid rgb(238,238,238)}
+#jobManage thead tr{border-bottom: 1px solid rgb(238,238,238)}
+#jobManage table tr,#jobManage>h5{line-height: 40px}
+#jobManage>h4{margin-top:-10px;text-align: center;font-size: 14px}
+#jobManage>h5,#jobManage thead{color: rgb(204,204,204)}
+#jobManage tbody{font-size: 14px}
+#jobManage tbody tr>td:last-child i{visibility: hidden;cursor: pointer;}
+#jobManage tbody tr:hover{color:rgb(41,149,231)}
+#jobManage tbody tr:hover>td:last-child i{visibility: visible;}
+#jobManage tbody tr:hover>td:last-child>.icon-delete{color:rgb(204,204,204)}
+#jobManage tbody tr:hover>td:last-child>.icon-close{color: rgb(166,215,255)}
+#jobManage table tr>td:nth-child(2){text-align: center;}
+#jobManage table tr>td:last-child{padding-right:20px;text-align: right}
+#jobManage tbody tr>td:last-child>i:last-child{margin-left: 30px;}
+#jobManage table tr>td:first-child{padding-left: 20px}
+#jobManage>.jBoxfooter>button:first-child,#moveTo>.jBoxfooter>button:first-child{border: 1px solid rgb(41,149,231);color: rgb(41,149,231)}
+#jobManage>.jBoxfooter>button:nth-child(2),#moveTo>.jBoxfooter>button:nth-child(2){color: rgb(153,153,153);background: transparent;}
+#jobManage .userinfoInput{font-size: 14px}
+/* CRM*/
+/* 新建任务 按钮*/
+.crm-footer{
+    width: 100%!important;
+    background: #fff!important;
+    color: rgb(41,149,231)!important;
+    border-top: 1px solid rgb(238,238,238)!important;
+}
+/*  工作记录*/
+#jobRecord li{
+    padding: 10px 20px;
+    line-height: 30px;
+    border-bottom:1px solid rgb(238,238,238)
+}
+#jobRecord li>h5{
+    font-size: 14px;
+    line-height: 1.7;
+}
+#jobRecord li>p,#jobRecord li>p>.c-completed{
+    color: rgb(153,153,153)
+}
+#jobRecord li>p>.c-ongoing{
+    color: rgb(41,149,231)
+}
+/*  公司信息*/
+.crmFirminfo>div{
+    margin: 20px 0;
+    line-height: 20px;
+}
+.crmFirminfoImg{
+    margin: -20px 0 30px;
+    text-align: center;
+}
+.crmFirminfoLink>p{
+    line-height: 40px;
+    font-size: 14px; 
+}
+.crmFirminfoLink>p .icon-delete{visibility: hidden;}
+.crmFirminfoLink>p:not(:last-child){
+    cursor: pointer;
+    border-bottom:1px solid rgb(238,238,238)
+}
+.crmFirminfoLink>p:not(:last-child):hover{
+    color: rgb(41,149,231)
+}
+.crmFirminfoLink>p:not(:last-child):hover .icon-delete{visibility: visible;}
+.staffForm textarea{
+    vertical-align: top;
+    text-indent: 10px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid rgb(238,238,238);
+}
+/*  工作流*/
+.workflowBox{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    background: #fff;
+}
+.workflowBox-title{
+    text-align: center;
+    margin: 20px 40px;
+}
+.workflowBox-title>h4{
+    font-size: 16px;
+    color: rgb(41,149,231)
+}
+.workflowItem{
+    // overflow: hidden;
+    padding:20px 40px 0 20px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(238,238,238)
+}
+.workflowItem>h5{margin-bottom: 20px}
+.workflowItem ol>li{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.workflowItem ol .icon-triangle-right{
+    margin: 0 20px;
+    vertical-align: middle;
+}
+.workflowItem ol>li .icon-plus-circle{
+    font-size: 2em;
+    color: rgb(41,149,231);
+    cursor: pointer;
+}
+.workflowItem ol>.pull-right>.btn-g{width: 82px}
+.workflowItem>ol>li>a{color: rgb(51,51,51)}
+.workflowItem .dropdownMenu{margin:-30px 0 0 30px }
+.workFlow-span{
+    display: inline-block;
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    // color: #fff;
+    font-size: 14px;
+    background: rgb(238,238,238);
+}
+.workFlow-span>i{margin-left: 10px;vertical-align: middle;color: rgb(204,204,204)}
+.startOrEnd{
+    display: inline-block;
+    width: 90px;
+    padding:3px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 100px;
+}
+.bg-start{
+    background: rgb(132,232,155)
+}
+.bg-end{
+    background: rgb(166,215,255)
+}
+/*  报表*/
+.forms-main thead tr{text-align: left;}
+.forms-main tbody{font-size: 14px}
+#workflowForms tbody tr td:nth-child(3)>div,#dutyForms tbody tr td:nth-child(2)>div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.4
+}
+#workflowForms tbody tr td:nth-child(3)>div>p,#dutyForms tbody tr td:nth-child(2)>div>p{font-size: 12px;color: rgb(153,153,153)}
+#approval ul li{padding:5px 0;line-height:2;border-bottom: 1px solid rgb(238,238,238)}
+#approval ul li:first-child{border-top: 1px solid rgb(238,238,238);}
+#approval ul li .cell h4{color: rgb(153,153,153)}
+#approval ul li .cell p{font-size: 14px}
+/*  云盘*/
+.cloudDisk,.forms{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+#jobDoc,#cloud,#dutyForms,#workflowForms{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    width: 100%;
+    background: #fff;
+}
+#cloud,#workflowForms{display: none}
+.cloudDisk-title{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px 0 20px;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(238,238,238)
+}
+.cloudDisk-title>nav{display: inline-block;color: rgb(153,153,153)}
+.cloudDisk-title>nav>a{color: rgb(41,149,231)}
+.cloudDisk-title .cloudDiskSearch{
+    position: relative;
+    display: inline-block;
+    width: 218px;
+    margin-left: 40px
+}
+.cloudDisk-title .cloudDiskSearch>input{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 10px;
+    border-radius: 100px;
+    background: rgb(241,241,241);
+    border: 1px solid transparent;
+}
+.cloudDisk-title .cloudDiskSearch>input:focus{outline: none}
+.cloudDisk-title .cloudDiskSearch>i{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: rgb(41,149,231)
+}
+.cloudDisk-main thead tr,.forms-main thead tr{
+    height: 40px;
+    line-height: 40px;
+    color: rgb(153,153,153);
+    border-bottom: 1px solid rgb(238,238,238)
+}
+.cloudDisk-main thead tr>th:first-child{text-align: left;}
+.cloudDisk-main thead tr th:hover{background: rgb(241,241,241)}
+.cloudDisk-main thead tr th.sorted.ascending:after{content:"  \2191"}
+.cloudDisk-main thead tr th.sorted.descending:after{content:" \2193"}
+.cloudDisk-main table,.forms-main table{
+    border-collapse: collapse;
+}
+.cloudDisk-main tbody tr,.forms-main tbody tr{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid rgb(238,238,238)
+}
+.cloudDisk-main tbody .icon-folder{
+    font-size: 3em;
+    color: rgb(235,196,22);
+    vertical-align: middle;
+    margin-right: 10px
+}
+.iconDoc{
+    font-size: 3em;
+    color: rgb(190,190,190);
+    vertical-align: middle;
+    margin-right: 10px
+}
+.cloudDisk-main input[type='checkbox']{
+    margin-right: 26px;
+    vertical-align: middle;
+}
+.cloudDisk-main table tr>td:not(:first-child){
+    text-align: center;
+}
+.cloudDisk-main tbody td>.pull-right{
+    visibility: hidden;
+    color: rgb(41,149,231);
+    cursor: pointer;
+}
+.cloudDisk-main tbody td>.pull-right>i:first-child{margin-right: 20px}
+.cloudDisk-main tbody>tr:hover{background: rgb(241,241,241)}
+.cloudDisk-main tbody>tr:hover>td>.pull-right{visibility: visible;}
+.cloud-menu{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin-left: 0px;
+    margin-top:-10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 40px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgb(152,152,152);
+    background: #fff;
+}
+#moveTo{display: none}
+#moveTo>form{border: 1px solid rgb(238,238,238);}
+#moveTo .tree .icon-folder{
+    font-size: 1.5em;
+    color: rgb(235,196,22);
+    vertical-align: middle;
+    margin:0 10px
+}
+/* 工作分析*/
+/*左边部分*/
+.jobAnalysis-left{
+    position: absolute;
+    left: 0;
+    width: 320px;
+    top: 0;
+    bottom: 0;
+    background:#fff ;
+    border-right:1px solid rgb(238,238,238)
+}
+.jobAnalysis-left .search{position: relative;box-shadow: 0 1px 2px rgba(109,109,109,.50)}
+.jobAnalysis-left .search>input{
+     width: 99%;
+     line-height: 46px;
+     text-indent: 25px;
+     font-size: 14px
+}
+.jobAnalysis-left .search>i{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    line-height: 50px;
+    font-size: 2em;
+    color: rgb(41,149,231)
+
+}
+.jobAnalysisLeft-main{height: -moz-calc(100% - 50px);height: -webkit-calc(100% - 50px);height: calc(100% - 50px);overflow-y: auto}
+.jobAnalysisLeft-main>h4{font-size:16px;background: rgb(238,238,238)}
+.jobAnalysisLeft-main>h4,.jobAnalysisLeft-main dt,.jobAnalysisLeft-main dd{
+    padding: 0 25px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.jobAnalysisLeft-main dl{border-bottom:1px solid rgb(238,238,238)}
+.jobAnalysisLeft-main dt,.jobAnalysisLeft-main dd{border: 2px solid transparent}
+.jobAnalysisLeft-main dt{font-size: 16px;}
+.jobAnalysisLeft-main dd{text-indent: 10px}
+.jobAnalysisLeft-main dd:hover{border:2px solid rgb(41,149,231);cursor: pointer;}
+.jobAnalysisLeft-main dd>.pull-right{visibility: hidden;cursor: pointer;}
+.jobAnalysisLeft-main dd:hover>.pull-right{visibility: visible;color: rgb(41,149,231)}
+/*中间部分*/
+.jobAnalysis-center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 321px;
+    right: 281px;
+}
+.jobAnalysisCenter-box{background: #fff;border-bottom: 1px solid rgb(238,238,238)}
+.jobAnalysisCenter-box>h3{
+    padding: 10px 0 10px 80px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+}
+.jobAnalysisCenter-box>h3 i{color: rgb(153,153,153)}
+.jobAnalysisCenter-box>h3 i:last-child{margin-left: 30px;margin-right: 10px}
+.jobAnalysisCenter-text{
+    // text-align: justify;
+    word-spacing: -4px;
+    min-height: 150px
+}
+.docBox{
+    display: inline-block;
+    width: 14.2%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    color: rgb(153,153,153);
+    background: #fff;
+}
+.docBox>i:nth-child(2){
+    font-size: 2em;
+    color: rgb(41,149,231);
+    line-height: 2
+}
+.docBox>i:not(:nth-child(2)){visibility: hidden;cursor: pointer;}
+.docBox:hover{background: rgb(242,242,242)}
+.docBox:hover>i:not(:nth-child(2)){visibility: visible;}
+.left_fix{height:0; padding:0; overflow:hidden;}
+.jobAnalysisCenter-btn{margin-top: 40px;text-align: center;}
+.jobAnalysisCenter-btn>button{
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(41,149,231);
+    border-radius: 2px;
+    border: 1px solid rgb(41,149,231);
+    background: transparent;
+}
+/*右边部分*/
+.jobAnalysis-right{
+    position: absolute;
+    right: 0;
+    width: 280px;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    border-left:1px solid rgb(238,238,238)
+}
+.jobAnalysisRight-box{padding:0 10px;line-height: 36px;color: rgb(153,153,153);border-bottom: 1px solid rgb(238,238,238)}
+.jobAnalysisRight-box>h5{
+    font-size: 14px;
+    color: rgb(51,51,51);
+    text-indent: 10px;
+    background: rgb(238,238,238)
+}
+.floatBar{
+    position: absolute;
+    right: 30px;
+    bottom:30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.22);
+    background: rgb(41,149,231);
+}
+.floatBar i{font-size: 3em}
+.floatBar-menu{
+     display: none;
+     position: absolute;
+     bottom: 30px;
+     right: 100px;
+     z-index: 2;
+     width: 300px;
+     line-height: 30px;
+     border-radius: 2px;
+     box-shadow: 0 1px 2px rgba(68,68,68,.5);
+     background: #fff;
+}
+.floatBar-menu>button{
+     width: 100%;
+     color: #fff;
+     font-size: 14px;
+     line-height: 30px;
+     background: rgb(41,149,231);
+     border: 1px solid transparent;
+}
+.floatBar-menu ul li{
+    padding: 0 20px;
+    line-height: 40px;
+    box-shadow:0 1px 0 rgba(238,238,238,.5)
+}
+.floatBar-menu ul li .pull-right{
+    color: rgb(204,204,204)
+}
+/*进入 会议*/
+.mettingBox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 25px;
+    line-height: 60px;
+    background: #fff;
+    box-shadow: 0 -2px 2px rgba(153,153,153,.5)
+}
+.mettingBox>nav a{margin:0 15px;}
+.mettingBox-handle>a>i{font-size: 3em;vertical-align: middle;color: rgb(41,149,231)}
+.mettingMain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;   
+}
+.inmettingMain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 70%;
+    margin:auto;   
+}
+.inmettingMain button{
+    width: 135px;
+    // height: 44px;
+    line-height: 37px;
+    color: #fff;
+    font-size: 16px;
+    background: rgb(41,149,231);
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+.inmettingMain .cell h1{font-size: 30px;}
+.inmettingMain .cell p{font-size: 20px;color: rgb(41,149,231);line-height: 40px}
+.inmettingMain .cell p strong{font-size: 33px;}
+/* 会议模式 弹窗*/
+.meeting-title{margin-top: -30px;overflow: hidden;}
+.meeting-title>a{
+    float: left;
+    width: 50%;
+    line-height: 58px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(51,51,51);
+    border-bottom:2px solid rgb(238,238,238)
+}
+.meeting-title>a.active,.meeting-title>a:hover{border-bottom:2px solid rgb(41,149,231)}
+/*日期插件*/
+#appointment input[name='timepicker']{width: 90px;margin-left: 20px}
+.ui-timepicker-standard{
+    z-index: 10001!important
+}
+#appointment .dropdownMenu{margin-top: 0;margin-left: 0}
+#appointmented{display: none;width: 100%}
+#appointment{width: 100%;margin-top: 20px}
+#appointment .dis-2{font-size: 14px}
+#appointment .icon-plus-circle{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 2px;
+    text-align: center;
+    color: rgb(41,149,231);
+    font-size: 3em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.meeting-num{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    font-size: 12px;
+    color: rgb(41,149,231);
+    border: 1px solid;
+}
+#meeting .jBoxfooter>button{
+    width: 135px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 16px
+}
+#meeting .jBoxfooter>button:first-child{
+    margin-right:20px;
+    background: rgb(42,210,60);
+    
+}
+#meeting .jBoxfooter>button:nth-child(2){
+    margin-left: 20px;
+    background: rgb(41,149,231)
+}
+#meeting .jBoxfooter>p{
+    margin-top: 30px;
+    margin-bottom: -20px;
+    color: rgb(153,153,153)
+}
+#appointmented .appointmented-item{
+    padding:10px 0;
+    border-bottom: 1px solid rgb(204,204,204)
+}
+.appointmented-item{line-height: 20px}
+.appointmented-item>h4{
+    margin-bottom: 10px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.appointmented-item>h4>.pull-right{
+    font-size: 12px
+}
+.appointmented-item>.pull-right button{
+    height: 25px;
+    line-height: 23px;
+    margin:10px 0 10px 10px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+.appointmented-item>.pull-right button:first-child{
+    background: rgb(204,204,204)
+}
+.appointmented-item>.pull-right button:last-child{
+    background: rgb(41,149,231)
+}
+mark{margin-left: 30px;color: rgb(41,149,231);background: transparent;}
+
