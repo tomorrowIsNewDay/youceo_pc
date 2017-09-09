@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>有策管理 PC端－推动工作流流转</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://7xkf8c.com2.z0.glb.qiniucdn.com/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./asset/css/iconfont.css">
+  <!-- 本页 dialog 插件 -->
+  <link href="./asset/css/jBox.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./asset/css/main.css">
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="logo pull-left">
+			<a href=""><img src="./asset/images/youceo.png"></a>
+		</div>
+		<nav class="leftNav pull-left">
+			<ul>
+				<li><a href="drive.html" class="active">推动</a></li>
+				<li><a href="taskList.html">任务</a></li>
+				<li><a href="">项目</a></li>
+				<li><a href="jobAccount.html">工作统计</a></li>
+				<li><a href="jobAnalysis.html">工作分析</a></li>
+				<li><a href="">报表</a></li>
+				<li><a href="crm.html">CRM</a></li>
+			</ul>	
+		</nav>
+		<nav class="rightNav pull-right">
+			<ul>
+				<li><a href="javascript:;" id="add-a"><i class="icon iconfont icon-plus-circle headericon"></i></a>
+					<ul class="avatar-menu" style="right: 170px">
+						<li><a href="addTask.html"><i class="icon iconfont icon-personal-setting"></i>新增任务</a></li>
+						<li><a href="" id="newCustomers-a"><i class="icon iconfont icon-cloud-disk"></i>新增客户</a></li>
+					</ul>
+				</li>
+				<li><a href=""><i class="icon iconfont icon-chat headericon"></i></a></li>
+				<li>
+					<a href="javascript:;" id="avatar-a"><img  class="avatar avatar-34" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></a>
+					<ul class="avatar-menu">
+						<li><a href="userinfo.html"><i class="icon iconfont icon-personal-setting"></i>个人资料</a></li>
+						<li><a href="cloudDisk"><i class="icon iconfont icon-cloud-disk"></i>云盘</a></li>
+						<li><a href="" id="meeting-a"><i class="icon iconfont icon-histogram"></i>会议模式</a></li>
+						<li><a href="workflow.html"><i class="icon iconfont icon-personal-setting"></i>工作流管理</a></li>
+						<li><a href="org.html"><i class="icon iconfont icon-personal-setting"></i>组织架构</a></li>
+						<li><a href=""><i class="icon iconfont icon-personal-setting"></i>权限设置</a></li>
+						<li><a href=""><i class="icon iconfont icon-personal-setting"></i>退出</a></li>
+					</ul>
+				</li>
+			</ul>		
+		</nav>
+	</header>
+	<div class="wrapperLeft">
+		<table width="100%" class="task-table grayTable">
+			<thead>
+				<tr>
+					<td width="" class="pl30">类型</td>
+					<td width="" class="pl20"><div>任务内容</div></td>
+				            <td width="">目标名</td>
+				            <td>目标值</td>
+				            <td width="">时间</td>
+				            <td width=""></td>
+				</tr>
+			</thead>
+			<tbody id=''>
+				<tr class="task-tr" data-alias="all">
+				            <td class="pl30"><span class="iconType bg-grayer itype"><i class="icon iconfont icon-document"></i></span>个人任务</td>
+					<td class="pl20">对第三季度销售会议内容进行整理，对大区的销售分配制度进行梳理</td>
+				            <td>大区数</td>
+				            <td>13</td>
+				            <td>12</td>
+				            <td class="tr"><span class="driveStatus"><i class="icon iconfont icon-chat mr10"></i>8</span></td>
+				        
+				</tr>
+				<tr class="task-tr" data-alias="all">
+				            <td class="pl30"><img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="iconType itype">王志辉指派</td>
+					<td class="pl20">对第三季度销售会议内容进行整理，对大区的销售分配制度进行梳理</td>
+				            <td>大区数</td>
+				            <td>13</td>
+				            <td>超期1天</td>
+				            <td class="tr"><span class="driveStatus"><i class="icon iconfont icon-chat mr10"></i>8<i class="icon iconfont icon-fujian mr10  ml10"></i>2</span></td>        
+				</tr>
+				<tr class="task-tr" data-alias="draft">
+				            <td class="pl30 c-draft"><span class="iconType bg-grayer itype"><i class="icon iconfont icon-write"></i></span>草稿</td>
+					<td class="pl20">对第三季度销售会议内容进行整理，对大区的销售分配制度进行梳理</td>
+				            <td></td>
+				            <td>13</td>
+				            <td></td>
+				            <td class="tr"></td>
+				        
+				</tr>
+				<tr class="task-tr" data-alias="draft">
+				            <td class="pl30"><img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="iconType itype">章三提交</td>
+					<td class="pl20">关注中国污水处理工程网站获取相关信</td>
+				            <td>设计稿</td>
+				            <td>13</td>
+				            <td>21天</td>
+				            <td class="tr"><span class="driveStatus"><i class="icon iconfont icon-chat mr10"></i>8<i class="icon iconfont icon-fujian mr10  ml10"></i>2</span></td>        
+				</tr>
+			</tbody>
+		</table>	
+	</div>
+	<div class="wrapperRight">
+		<div class="wrapperRight-tittle">
+			<ul>
+				<li><a href="#detail"  class="active">详情</a></li>
+				<li><a href="#moving">动态</a></li>
+				<li><a href="#attachment">附件</a></li>
+			</ul>
+		</div>
+		<div class="wrapperRight-main">
+			<div style="width: 9999px;height: 100%">
+				<div id="detail" style="height: 100%">
+					<div class="detail-top">
+						<h4>
+						<span class="iconType bg-grayer itype"><i class="icon iconfont icon-document"></i></span>个人任务<span class="pull-right"><i class="icon iconfont icon-more"></i></span>
+						</h4>
+						<h5>
+							<p>任务内容</p>
+							<p>二楼编织管车间停产，相关水加热设备关停，电控箱关停安全查看</p>
+						</h5>
+						<div><h6 class="dis-3">完成时间</h6><p class="dis-7">2016年12月1日<span class="pull-right">12</span></p></div>
+						<div><h6 class="dis-3">目标名</h6><p class="dis-7">检查次数</p></div>
+						<div><h6 class="dis-3">目标值</h6><p class="dis-7">12</p></div>
+						<div><h6 class="dis-3">关联</h6><p class="dis-7"><span class="iconType bg-darkblue itype c-white">国美</span>国美电器</p></div>
+						<div><h6 class="dis-3">工作流</h6><p class="dis-7"><span class="workFlow">评审工作流</span></p></div>
+					</div>
+					<div class="detail-bottom">
+						<div><h6 class="dis-2">章三</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2">利文斯</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2">詹姆斯</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2">科比</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2">乔丹</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2">马蒂</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2"> 麦基</h6><p class="dis-8"><input type="text" name=""></p></div>
+						<div><h6 class="dis-2">麦迪</h6><p class="dis-8"><input type="text" name=""></p></div>
+						
+					</div>
+				</div>
+				<div id="moving">
+					<input type="text" name="" placeholder="发布评论…">
+					<ul>
+						<li>
+							<img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="iconType pull-left itype">
+							<div class="cell">
+								<h5 class="">孙灵光<span class="pull-right">14:22</span></h5>
+								<p class="">好的，我会在11月30日之前完成</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="iconType pull-left itype">
+							<div class="cell">
+								<h5 class="">孙光<span class="pull-right">14:22</span></h5>
+								<p class="">标准按照此文件来做</p>
+								<div class="moving-doc">
+									<i class="icon iconfont icon-word itype"></i>2016-12-01.doc
+									<span class="pull-right">
+										<i class="icon iconfont icon-download itype"></i><i class="icon iconfont icon-close itype"></i>
+									</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="attachment">
+					<div>
+			            		<div class="attachment-btn tc">
+			            			<label for="fileA" ><i class="icon iconfont icon-fujian"></i>上传附件</label>
+							<form><input type="file" id="fileA" ></form>
+			            		</div>
+			            		<div class="attachment-main">
+			            			<ul class="">
+				            			<li><a href=""><i class="icon iconfont icon-word itype"></i>2016-12-01.doc</a><span class="pull-right"><img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="iconType itype"><i class="icon iconfont icon-download itype"></i><i class="icon iconfont icon-close itype"></i></span></li>
+				            			<li><a href=""><i class="icon iconfont icon-word itype"></i>2016-12-02.doc</a><span class="pull-right"><img src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg" class="iconType itype"><i class="icon iconfont icon-download itype"></i><i class="icon iconfont icon-close itype"></i></span></li>
+				            		</ul>	
+			            		</div>	
+			            	</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapperRight-footer">
+			<a href=""><i class="icon iconfont icon-close itype"></i>不通过</a><!-- 
+			 --><a href=""><i class="icon iconfont icon-choose itype c-white"></i>通过</a>
+		</div>
+		<div class="overlay"><i class="fa fa-refresh fa-spin"></i></div>
+	</div>
+
+</div>
+<!-- 头部弹窗 页面通用-->
+<div id="newCustomers">
+	<form class="staffForm">
+		<div>
+			<label for="" class="dis-2">公司名称</label><input type="text" placeholder="请输入公司名称" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">公司地址</label><input type="text" placeholder="请输入公司地址" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">联系人</label><input type="text" placeholder="请输入联系人姓名" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">联系方式</label><input type="text" placeholder="请输入联系人联系方式" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">邮箱</label><input type="text" placeholder="请输入联系人邮箱" class="dis-8">
+		</div>
+		<div>
+			<label for="" class="dis-2">备注</label><textarea class="dis-8" rows="5" placeholder="备注"></textarea>
+		</div>
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
+<!-- 会议弹窗 页面通用-->
+<div id="meeting">
+	<div class="meeting-title">
+		<a href="javascript:;" data-id="appointment" class="active">预约</a>
+		<a href="javascript:;" data-id="appointmented">已预约 <span class="meeting-num">3</span></a>
+	</div>
+	<div>
+		<div id="appointment">
+			<form class="staffForm">
+				<div>
+					<label for="" class="dis-2">会议主题</label><input type="text" placeholder="" class="dis-8">
+				</div>
+				<div>
+					<label for="" class="dis-2">会议时间</label><input type="text" placeholder=""><input type="text" placeholder="" style="width: 90px;margin-left: 20px">
+				</div>
+				<div>
+					<label for="" class="dis-2">会议地点</label><input type="text" placeholder="" class="dis-8">
+				</div>
+				<div>
+					<span class="dis-2">参会人员</span><div class="dis-8">
+						<img  class="avatar avatar-34 itype" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+						<img  class="avatar avatar-34 itype" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">
+						<i class="icon iconfont icon-plus-circle"></i>
+						<div class="dropdownMenu" style="margin-top: 0;margin-left: 100px">
+				            		<div class="dropdownMenu-search">
+				            			<input type="text" placeholder="输入员工名称">
+				            			<i class="icon iconfont icon-search"></i>
+				            		</div>
+				            		<div class="dropdownMenu-main">
+				            			<ul class="dropdownMenu-addStaff">
+					            			<li><a href=""><img class="avatar" src="http://up.qqjia.com/z/25/tu32695_9.jpg">韩一</a></li>
+					            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">章三</a></li>
+					            			<li><a href=""><img class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg">李四</a></li>
+					            		</ul>	
+				            		</div>	
+				            	</div>
+					</div>
+				</div>
+			</form>
+			<div class="jBoxfooter">
+				<button>预约</button>
+				<button>立即开始</button>
+				<p>预约后会通知所有参会人员</p>
+			</div>
+
+		</div>
+		<div id="appointmented">
+			<div class="appointmented-item">
+				<h4>生产部例会<span class="pull-right"><s>孙灵光</s> 预约<mark>会议中</mark></span></h4>
+				<p>时间：2016-12-22</p>
+				<p>地点：3幢203会议室</p>
+			</div>
+			<div class="appointmented-item">
+				<h4>生产部例会<span class="pull-right"><s>孙灵光</s> 预约</span></h4>
+				<p class="pull-right">
+					<button>修改</button>
+					<button>开始</button>
+				</p>
+				<p>时间：2016-12-22</p>
+				<p>地点：3幢203会议室</p>
+			</div>
+		</div>
+	</div>	
+</div>	
+
+<!-- <script src="./asset/js/bootstrap.min.js"></script> -->
+<script src="./asset/js/jquery-2.2.3.min.js"></script>
+<script src="./asset/js/jBox.min.js"></script>
+<script src="./asset/js/global.js"></script>
+<script type="text/javascript">
+$(function(){
+	moreinfo($('tbody .task-tr:first'));//加载第一条信息
+	$(document).on('click','tbody .task-tr',function(){
+		moreinfo($(this));
+	})
+	$(document).on('focus','.dutyInput .input-btn>input',function(){
+		var newDiv ='  <div class="dutyInput">'+
+					'<h6 class="dis-2"></h6>'+
+					'<div class="dis-8">'+
+						'<div class="input-btn">'+
+							'<select class="dis-3"> '+
+									'<option>技术工艺部</option>'+
+									'<option>部门2</option>'+
+								'</select><input type="text" name="" class="dis-7" placeholder="说明...">'+
+						'</div>'+
+					'</div>'+
+				'</div>';
+		
+		var parents = $(this).parents('.dutyInput');
+		if($(parents).next('.dutyInput').length ==0){
+			$(parents).after(newDiv)
+		}
+	})
+
+})
+</script>
+</body>
+</html>

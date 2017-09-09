@@ -1,0 +1,207 @@
+<div class="wrapperLeft r0">
+	<div class="org">
+		<div class="orgLeft">
+			<h4><span class="iconType bg-grayer itype"><i class="iconfont icon-company"></i></span>有策管理有限公司</h4>
+			<div class="tree">
+				<div class="treeSearch">
+					<input type="text" placeholder="输入部门、姓名、手机号…">
+					<i class="icon iconfont icon-search"></i>
+				</div>
+				<ul id="rootUL">
+				</ul>
+			</div>
+
+		</div>
+		<div class="orgRight">
+			<h4>营销部<i class="icon iconfont icon-angle-right"></i>市场部
+				<span class="pull-right"><a href="javascript:;" id="newStaff-a"><i class="icon iconfont icon-add_people " ></i>新增职员</a><a href="javascript:;"  id="orgMore-a"><i class="icon iconfont icon-more"></i>更多</a>
+	            		<ul class="orgMore">
+	            			<li><a href="javascript:;" id="jobManage-a">职位管理</a></li>
+	            			<li><a href="javascript:;" id="newDept-a">新增部门</a></li>
+	            			<li><a href="javascript:;" id="newName-a">重命名</a></li>
+	            			<li><a href="javascript:;" id="delDept-a">删除部门</a></li>
+	            		</ul></span></h4>
+			<h5><a href="" class="active">全部</a><a href="">A</a><a href="">B</a><a href="">C</a><a href="">D</a><a href="">E</a><a href="">F</a><a href="">G</a><a href="">H</a><a href="">I</a><a href="">J</a><a href="">K</a><a href="">L</a><a href="">M</a><a href="">N</a><a href="">O</a><a href="">P</a><a href="">Q</a><a href="">R</a><a href="">S</a><a href="">T</a><a href="">U</a><a href="">V</a><a href="">W</a><a href="">X</a><a href="">Y</a><a href="">Z</a></h5>
+			<div class="tableBox">
+				<table width="100%" class="pl20">
+					<thead class="c-thead">
+						<tr>
+							<td>头像</td><td>姓名</td><td>部门</td><td>职位</td><td>联系方式</td><td>邮箱</td><td>操作</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr data-id='1'>
+							<td ><img  class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></td><td>孙灵光1</td><td>销售部</td><td><i class=" icon iconfont icon-star istatus"></i>销售部长</td><td>15068725443</td><td>15068725443@163.com</td><td><i data-id='1' class="icon iconfont icon-write editStaff-i"></i><i class="icon iconfont icon-delete delStaff-i"></i></td>
+						</tr>
+						<tr data-id='2'>
+							<td><img  class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></td><td>孙光2</td><td>销售部</td><td><i class=" icon iconfont icon-star-O istatus"></i>销售副部长</td><td>15068725443</td><td>15068725443@163.com</td><td><i data-id='2' class="icon iconfont icon-write editStaff-i"></i><i class="icon iconfont icon-delete delStaff-i"></i></td>
+						</tr>
+						<tr data-id='3'>
+							<td><img  class="avatar" src="http://www.qq745.com/uploads/allimg/141225/1-141225164J5.jpg"></td><td>孙光3</td><td>销售部</td><td>业务员</td><td>15068725443</td><td>15068725443@163.com</td><td><i data-id='3' class="icon iconfont icon-write editStaff-i"></i><i class="icon iconfont icon-delete delStaff-i"></i></td>
+						</tr>						
+					</tbody>
+				</table>
+			</div>
+				
+		</div>
+	</div>
+</div>
+
+<!-- 重命名  弹窗 -->
+<div id="newName">
+	<form>
+		<div>
+			<label for="" class="dis-2 c-text">部门名称</label><input type="text" name="" class="dis-8 jBoxinput">
+		</div>
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
+<!-- 新增部门 弹窗 -->
+<div id="newDept">
+	<form>
+		<div>
+			<label for="" class="dis-2 c-text">部门名称</label><input type="text" name="" class="dis-8 jBoxinput">
+		</div>
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
+<div id ="delDept">
+	<h3>确定删除该部门？</h3>
+	<div class="jBoxfooter tr">
+		<button class="closejBox">取消</button>
+		<button>确定删除</button>
+	</div>
+</div>
+<div id="delStaff">
+	<h3>确定删除该员工？</h3>
+	<div class="jBoxfooter tr">
+		<button class="closejBox">取消</button>
+		<button>确定删除</button>
+	</div>
+</div>
+<div id="newStaff">
+	<form class="staffForm">
+		<div>
+			<label for="myname" class="dis-2">姓名</label><input type="text" name="" id="myname" class="dis-8">
+		</div>
+		<div>
+			<span class="dis-2">部门</span><div class="dis-8">
+				<select class="input-control">
+				  <option>用户体验部</option>
+				  <option>市场部</option>
+				  <option>营销部</option>
+				  <option>销售部</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<span class="dis-2">职位</span><div class="dis-8">
+				<select class="input-control">
+				  <option>销售副部长</option>
+				  <option>销售部长</option>
+				  <option>业务员</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<span class="dis-2">级别</span><div class="dis-8">
+				<label><input type="radio" name="rank" value="">员工</label>
+				<label style="margin: 0 20px"><input type="radio" name="rank" >正级管理者<i class="icon iconfont icon-star"></i></label>
+				<label><input type="radio" name="rank">副级管理者<i class="icon iconfont icon-star-O"></i></label></div>
+		</div>
+		<div>
+			<span class="dis-2">任务提交</span><div class="dis-8">
+				<select class="input-control">
+				  <option>章三</option>
+				  <option>里斯</option>
+				  <option>王屋</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<label for="iphone" class="dis-2">联系方式</label><input type="text" name="" id="iphone" class="dis-8">
+		</div>
+		<div>
+			<label for="email" class="dis-2">邮箱</label><input type="text" name="" id="email" class="dis-8">
+		</div>	
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>	
+<div id="editStaff">
+	<form class="staffForm">
+		<div>
+			<label for="name" class="dis-2">姓名</label><input type="text" name="" id="name" class="dis-8">
+		</div>
+		<div>
+			<span class="dis-2">部门</span><div class="dis-8">
+				<select class="input-control">
+				  <option>用户体验部</option>
+				  <option>市场部</option>
+				  <option>营销部</option>
+				  <option>销售部</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<span class="dis-2">职位</span><div class="dis-8">
+				<select class="input-control">
+				  <option>销售副部长</option>
+				  <option>销售部长</option>
+				  <option>业务员</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<span class="dis-2">级别</span><div class="dis-8">
+				<label><input type="radio" name="rank" value="">员工</label>
+				<label style="margin: 0 20px"><input type="radio" name="rank" >正级管理者<i class="iconfont icon-star"></i></label>
+				<label><input type="radio" name="rank">副级管理者<i class="iconfont icon-star-O"></i></label></div>
+		</div>
+		<div>
+			<span class="dis-2">任务提交</span><div class="dis-8">
+				<select class="input-control">
+				  <option>章三</option>
+				  <option>里斯</option>
+				  <option>王屋</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<label for="iphone" class="dis-2">联系方式</label><input type="text" name="" id="iphone" class="dis-8">
+		</div>
+		<div>
+			<label for="email" class="dis-2">邮箱</label><input type="text" name="" id="email" class="dis-8">
+		</div>	
+	</form>
+	<div class="jBoxfooter">
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>	
+<div id="jobManage">
+	<h4><span>用户体验部</span>-职位</h4>
+	<h5>共13个职位</h5>
+	<table width="100%">
+		<thead>
+			<tr><td>职位名称</td><td>人数</td><td>操作</td></tr>
+		</thead>
+		<tbody>
+			<tr><td><span>设计总监</span><input type="hidden" name="" class="userinfoInput"></td><td>1</td><td><i class="icon iconfont icon-write"></i><i class="icon iconfont icon-delete"></i></td></tr>
+			
+		</tbody>
+	</table>
+	<div class="jBoxfooter">
+		<button>新增职位</button>
+		<button class="closejBox">取消</button>
+		<button>完成</button>
+	</div>
+</div>
