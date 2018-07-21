@@ -44,7 +44,7 @@ define(['jquery', 'js/common/global'], function($, global){
 			path: '',
 			callback:function(){}
 		}, options);
-		// require.under(options.path);
+		// requirejs.undef(options.path);
 		require([options.path], function(page){
 			page.init({
 				callback:function(){
